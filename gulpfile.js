@@ -118,7 +118,7 @@ gulp.task('serve',['typescript', 'sass'], function() {
     gulp.watch('client/ts/**/*.ts', ['typescript']);
 });
 
-gulp.task('build', ['clean','typescript', 'sass'], function(){
+gulp.task('build', ['clean','typescript', 'sass','inject','inject-vendor'], function(){
     gulp.start('usemin','imagemin','copyfonts');
 })
 
