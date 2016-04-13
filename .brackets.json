@@ -1,0 +1,20 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Sites/aymont.ca/gulpfile.js",
+        "C:/Sites/aymont.ca/client/lib/jquery/src/ajax/script.js",
+        "C:/Sites/aymont.ca/client/lib/jquery/src/ajax/xhr.js",
+        "C:/Sites/aymont.ca/client/lib/jquery/src/ajax/parseJSON.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/es6/dev/router/router_link_dsl.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/es6/dev/src/animate/animation.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/es6/dev/src/animate/css_animation_options.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/es6/dev/src/common/directives/core_directives.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/es6/dev/src/common/directives/ng_class.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/es6/dev/platform/worker_render.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/es6/dev/src/common/directives/ng_if.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/platform/common_dom.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/platform/server.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/platform/worker_render.js",
+        "C:/Sites/aymont.ca/common/models/todo.js",
+        "C:/Sites/aymont.ca/client/lib/angular2/router/testing.js"
+    ]
+}

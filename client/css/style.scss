@@ -1,0 +1,17 @@
+// Styles.css should match:
+//
+//body {
+//  font: 100% Helvetica, sans-serif;
+//  color: #666; }
+//
+//End match
+
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #666;
+
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}

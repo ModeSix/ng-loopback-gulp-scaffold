@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo Application</title>
+    <!-- build:css css/styles.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+
+<body ng-app="aymontcaApp">
+<div class="container" ng-controller="IndexController">
+	<h2>Testing Database Calls</h2>
+	<div class="row">
+		<div class="col-xs-12">
+			<table class="table table-striped">
+				<tr ng-repeat="x in testvar">
+                    <td>{{x.title}}</td>
+                    <td>{{x.isDone}}</td>
+                    <td>{{x.id}}</td>
+                    
+                    <td>
+                        <form ng-submit="openEditor(x.id)">
+                            
+                            <input type="submit" id="submit" value="Edit {{x.id}}">
+                        </form>
+                    </td>
+                    
+				</tr>
+			</table>
+            <div ng-if="showEdit">
+                <form ng-submit="postEdit">
+                <input type="text" ng-model="editText.title">
+                
+                <p>Returned Text for {{thisItem.id}}: {{editText}}</p>
+                </form>
+            </div>
+            
+            
+            <form ng-submit="newPost()">
+                <input type="text" ng-model="newPostText" width="30">
+                <input type="submit" id="submit" value="Submit">  
+            </form>
+		</div>
+	</div>
+</div>
+    <!-- build:js js/scripts.js -->
+    <!-- bower:js -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/lodash/lodash.js"></script>
+    <script src="lib/restangular/dist/restangular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- inject:js -->
+    <script src="js/app.js"></script>
+    <script src="js/lb-services.js"></script>
+    <script src="js/controllers/main.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+
+</body>
+</html>
