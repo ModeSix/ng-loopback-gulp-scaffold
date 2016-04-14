@@ -23,10 +23,10 @@ angular.module('aymontcaApp')
         }
     };
     
-    $scope.openEditor = function(fuckingthing) {
+    $scope.openEditor = function(itemID) {
         
         var thisItem = {
-            id: fuckingthing
+            id: itemID
         };
         
         $scope.thisItem = thisItem;
